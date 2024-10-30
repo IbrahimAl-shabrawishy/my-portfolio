@@ -1,0 +1,49 @@
+/** ============================================
+ table of contents
+================================================
+ 
+1. Footer Design
+2. Responsive  Design
+
+ 
+*/
+
+/* *================================================
+     1. Footer Design
+*=================================================== */
+
+footer.flex {
+  justify-content: space-between;
+}
+
+footer.flex ul.flex {
+  gap: 1rem;
+}
+
+footer.flex ul.flex a {
+  color: var(--sub-title-color);
+  font-size: 0.9rem;
+  transition: 0.3s;
+  font-weight: 400;
+}
+
+footer.flex ul.flex a:hover {
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+footer.flex p {
+  color: rgb(113, 113, 122);
+}
+
+/* *================================================
+     2. Responsive  Design
+*=================================================== */
+
+@media (max-width: 800px) {
+  footer.flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

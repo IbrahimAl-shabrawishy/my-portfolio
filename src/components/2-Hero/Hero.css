@@ -1,0 +1,118 @@
+/** ============================================
+ table of contents
+================================================
+ 
+1. Left Section
+  2. Right Section ===>Animation
+ 3. Left Section ===>Responsive Media Query
+4. Right Section ===>Responsive Media Query
+
+ 
+*/
+
+/* *=======================================
+     1. Left Section
+*========================================== */
+
+section.hero {
+  margin-top: 3rem;
+}
+
+section.hero .left-section {
+  flex-grow: 1;
+}
+
+section.hero .avatar {
+  width: 88px;
+  border-radius: 50%;
+  border: 1px solid darkorange;
+  padding: 1px;
+  box-shadow: 2px 2px 40px wheat inset;
+}
+
+section.hero .icon-verified {
+  color: var(--blue);
+  margin-bottom: 0.3rem;
+}
+
+section.hero .parent-avatar.flex {
+  align-items: end;
+  gap: 0.6rem;
+  min-height: 99px;
+}
+
+section.hero h1.title {
+  font-size: 2.85rem;
+  margin: 24px 0;
+  color: var(--title-color);
+  font-weight: 500;
+}
+
+section.hero p.sub-title {
+  color: var(--sub-title-color);
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+  margin-bottom: 32px;
+}
+
+section.hero .all-icons {
+  font-size: 1.3rem;
+  gap: 1.5rem;
+  color: var(--sub-title-color);
+}
+.light section.hero .all-icons a {
+  color: var(--sub-title-color);
+}
+
+section.hero .all-icons .icon:hover {
+  font-size: 1.4rem;
+  transition: 0.3s;
+  cursor: pointer;
+  color: var(--icon-hover);
+}
+
+/* *=======================================
+     2. Right Section ===>Animation
+*========================================== */
+
+/* *=============================================
+     3. Left Section ===>Responsive Media Query
+*================================================= */
+
+@media (max-width: 1000px) {
+  .container {
+    --container-padding: 1.7rem;
+    width: 90%;
+    padding: 0 var(--container-padding);
+  }
+
+  .divider {
+    border-bottom: solid 1px var(--border-color);
+    margin: 3rem 0;
+    width: calc(100% + var(--container-padding) + var(--container-padding));
+    margin-left: calc(var(--container-padding) * -1);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+    padding: 0 var(--container-padding);
+  }
+}
+
+@media (max-width: 600px) {
+  section.hero p.sub-title {
+    padding-right: 1.5rem;
+  }
+}
+
+/* *=============================================
+     4. Right Section ===>Responsive Media Query
+*================================================ */
+
+@media (max-width: 1250px) {
+  section.hero .right-section.animation {
+    display: none;
+  }
+}
