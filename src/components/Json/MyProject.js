@@ -67,12 +67,12 @@ const myProjects = [
 
   {
     id: 5,
-    projectTitle: "React Project",
+    projectTitle: "My Portfolio",
     category: "react",
     imagePath: "/images/09ec474019a6749f650d27d72a8af135_thumb.jpg",
-    text: "An interactive React.js project",
-    liveLink: "https://example.com/react-project",
-    githubLink: "https://github.com/username/react-project",
+    text: "My Portfolio using React Js",
+    liveLink: "https://react-portfolio-9e280.web.app/",
+    githubLink: "https://github.com/IbrahimAl-shabrawishy/my-portfolio.git",
     tags: ["React", "JavaScript", "Responsive Design"],
   },
 
